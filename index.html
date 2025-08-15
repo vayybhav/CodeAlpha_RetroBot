@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroBot Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="outer-container">
+        <div id="chat-panel">
+
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <h2 class="logo">🤖 RetroBot</h2>
+                <button class="option-btn new-chat-btn">+ New Chat</button>
+                <input type="text" id="session-search" placeholder="Search chats..." />
+                <div id="session-list"></div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main id="chat-main">
+                <div id="chat-container">
+                    <div id="chatlogs"></div>
+
+                    <!-- Input Area -->
+                    <div id="chat-input">
+                        <textarea id="userInput" placeholder="Type a message..." rows="1"></textarea>
+                        <button id="sendBtn">Send</button>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="retrobot.js"></script>
+</body>
+
+</html>
